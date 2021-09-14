@@ -60,11 +60,11 @@ Average Radius of tomato: 8.375cm
 ```
 
 <p align = "center"> 
-    <img width = 500 src = "assets/multiview_sample.png" alt = "multi-view sample"/>
+    <img width = 500 src = "assets/multiview_sample.jpg" alt = "multi-view sample"/>
     <br>
     Fig 3. Matched Features in the Multiview Pipeline
     <br>
-    <img width = 500 src = "assets/multiview_output2.png" alt = "multi-view sample"/>
+    <img width = 500 src = "assets/multiview_output2.jpg" alt = "multi-view sample"/>
     <br>
     Fig 4. Object Contour used to estimate the size
 </p>
