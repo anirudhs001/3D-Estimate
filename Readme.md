@@ -1,10 +1,10 @@
 
 ### Estimate the size of planar objects using a single image  
 Steps:
-1. Capture image of object containing the reference grid
-2. Calculate homography matrix between image and reference image
-3. perpective transform input image
-4. estimate size of object using reference's scale  
+1. Capture image of object containing the reference grid.
+2. Calculate homography matrix between image and reference image.
+3. perpective transform input image.
+4. estimate size of object using reference's scale.
 Output:  
 
 ```
@@ -14,22 +14,24 @@ d1, d2(in mm) = (66.41, 73.63), radius(in px) = 332.6036376953125, radius(in mm)
 <p align = "center"> 
     <img width = 500 src = "assets/monocular_sample.png" alt = "monocular sample" />
     <br>
-    Fig1. All
+    Fig1. All intermediate steps in the monocular pipeline. The object size is estimated by warping the reference grid so that it becomes parallel to the image plane (through homography transformations). Then the object size is simply estimated from the warped image. 
 </p>
-
+#### Problem:  
+Above technique works fairly well for planar objects, otherwise homography warps the image too much to get a reasonable estimate.
 ### Alternate: Using Multiple Images
 Steps:
-1. Capture images from different angles(all containing reference grid)
-2. Match features of the object of interest
+1. Capture images from different angles(all containing reference grid).
+2. Match features of the object of interest.
 3. Triangulate features to get the actual coordinates of the points(upto a scale).
-4. Get actual coordinates in real world using scale of the reference grid
+4. Get actual coordinates in real world using scale of the reference grid.
 5. Estimate mean depth of the object of interest.
 6. Use depth to get actual size of the object.
 
+The entire Multi-view Pipeline looks like this:
 <p align = "center"> 
     <img width = 800 src = "assets/multiview_pipeline.png" alt = "entire multi-view pipeline" />
     <br>
-    Fig 2. The entire Multi-view pipeline
+    Fig 2. The entire Multi-view pipeline.
 </p>
 
 Output:   
