@@ -27,7 +27,7 @@ Steps:
 6. Use depth to get actual size of the object.
 
 <p align = "center"> 
-    <img width = 500 src = "assets/multiview_pipeline.png" alt = "entire multi-view pipeline" />
+    <img width = 800 src = "assets/multiview_pipeline.png" alt = "entire multi-view pipeline" />
     <br>
     Fig 2. The entire Multi-view pipeline
 </p>
