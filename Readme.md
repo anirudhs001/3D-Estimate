@@ -12,13 +12,16 @@ d1, d2(in mm) = (66.41, 73.63), radius(in px) = 332.6036376953125, radius(in mm)
 ```
   
 <p align = "center"> 
-    <img width = 500 src = "assets/monocular_sample.png" alt = "monocular sample" />
+    <img width = 500 src = "assets/monocular_sample.jpg" alt = "monocular sample" />
     <br>
     Fig1. All intermediate steps in the monocular pipeline. The object size is estimated by warping the reference grid so that it becomes parallel to the image plane (through homography transformations). Then the object size is simply estimated from the warped image. 
 </p>
+
 #### Problem:  
 Above technique works fairly well for planar objects, otherwise homography warps the image too much to get a reasonable estimate.
+
 ### Alternate: Using Multiple Images
+
 Steps:
 1. Capture images from different angles(all containing reference grid).
 2. Match features of the object of interest.
@@ -29,7 +32,7 @@ Steps:
 
 The entire Multi-view Pipeline looks like this:
 <p align = "center"> 
-    <img width = 800 src = "assets/multiview_pipeline.png" alt = "entire multi-view pipeline" />
+    <img width = 800 src = "assets/multiview_pipeline.jpg" alt = "entire multi-view pipeline" />
     <br>
     Fig 2. The entire Multi-view pipeline.
 </p>
