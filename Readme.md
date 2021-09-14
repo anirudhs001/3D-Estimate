@@ -1,6 +1,8 @@
 
 ### Estimate the size of planar objects using a single image  
-Steps:
+
+#### Steps:
+
 1. Capture image of object containing the reference grid.
 2. Calculate homography matrix between image and reference image.
 3. perpective transform input image.
@@ -22,7 +24,8 @@ Above technique works fairly well for planar objects, otherwise homography warps
 
 ### Alternate: Using Multiple Images
 
-Steps:
+#### Steps:
+
 1. Capture images from different angles(all containing reference grid).
 2. Match features of the object of interest.
 3. Triangulate features to get the actual coordinates of the points(upto a scale).
@@ -37,7 +40,8 @@ The entire Multi-view Pipeline looks like this:
     Fig 2. The entire Multi-view pipeline.
 </p>
 
-Output:   
+#### Output:   
+
 ```
 translation and rotatation between the two camera positions:
 Translation:
