@@ -1,6 +1,7 @@
 
 ### Estimate the size of planar objects using a single image  
 
+### Moncular Pipeline
 #### Steps:
 
 1. Capture image of object containing the reference grid.
@@ -22,8 +23,7 @@ d1, d2(in mm) = (66.41, 73.63), radius(in px) = 332.6036376953125, radius(in mm)
 #### Problem:  
 Above technique works fairly well for planar objects, otherwise homography warps the image too much to get a reasonable estimate.
 
-### Alternate: Using Multiple Images
-
+### Alternate: Multi-view Pipeline
 #### Steps:
 
 1. Capture images from different angles(all containing reference grid).
